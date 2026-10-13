@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        ArrayOperations arrayOps = new ArrayOperations(100); // Array capacity set to 100
         int choice;
 
         do {
@@ -22,26 +23,25 @@ public class Main {
 
             switch (choice) {
                 case 1:
-                    System.out.println("-> Array Operations Selected");
-                    // මෙහි Array වලට අදාළ උප මෙනුව (Submenu) හෝ ක්‍රමවේදය කැඳවිය හැක[cite: 3]
+                    arrayOps.showMenu(scanner);
                     break;
                 case 2:
-                    System.out.println("-> Stack Operations Selected");
+                    System.out.println("-> Stack Operations Selected (Pending implementation)");
                     break;
                 case 3:
-                    System.out.println("-> Queue Operations Selected");
+                    System.out.println("-> Queue Operations Selected (Pending implementation)");
                     break;
                 case 4:
-                    System.out.println("-> Linked List Operations Selected");
+                    System.out.println("-> Linked List Operations Selected (Pending implementation)");
                     break;
                 case 5:
-                    System.out.println("-> Searching Operations Selected");
+                    System.out.println("-> Searching Operations Selected (Pending implementation)");
                     break;
                 case 6:
-                    System.out.println("-> Graph Operations Selected");
+                    System.out.println("-> Graph Operations Selected (Pending implementation)");
                     break;
                 case 7:
-                    System.out.println("-> Performance Comparison Selected");
+                    System.out.println("-> Performance Comparison Selected (Pending implementation)");
                     break;
                 case 8:
                     System.out.println("-> Display All Results Selected");
