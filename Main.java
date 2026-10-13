@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.5); // (Note: scanner setup)
+        Scanner scanner = new Scanner(System.in);
         int choice;
 
         do {
@@ -23,7 +23,7 @@ public class Main {
             switch (choice) {
                 case 1:
                     System.out.println("-> Array Operations Selected");
-                    
+                    // මෙහි Array වලට අදාළ උප මෙනුව (Submenu) හෝ ක්‍රමවේදය කැඳවිය හැක[cite: 3]
                     break;
                 case 2:
                     System.out.println("-> Stack Operations Selected");
