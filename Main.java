@@ -3,8 +3,11 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        ArrayOperations arrayOps = new ArrayOperations(100); // Array capacity set to 100
-        SearchingOperations searchOps = new SearchingOperations(); // Searching operations object
+        ArrayOperations arrayOps = new ArrayOperations(100); 
+        SearchingOperations searchOps = new SearchingOperations(); 
+        StackOperations stackOps = new StackOperations(100);
+        QueueOperations queueOps = new QueueOperations(100);
+
         int choice;
 
         do {
@@ -27,10 +30,10 @@ public class Main {
                     arrayOps.showMenu(scanner);
                     break;
                 case 2:
-                    System.out.println("-> Stack Operations Selected (Pending implementation)");
+                    stackOps.showMenu(scanner);
                     break;
                 case 3:
-                    System.out.println("-> Queue Operations Selected (Pending implementation)");
+                    queueOps.showMenu(scanner);
                     break;
                 case 4:
                     System.out.println("-> Linked List Operations Selected (Pending implementation)");
