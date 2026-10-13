@@ -3,11 +3,14 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        ArrayOperations arrayOps = new ArrayOperations(100); 
-        SearchingOperations searchOps = new SearchingOperations(); 
-        StackOperations stackOps = new StackOperations(100);
-        QueueOperations queueOps = new QueueOperations(100);
-        LinkedListGraphOperations member3Ops = new LinkedListGraphOperations();
+        
+        // Modules from all group members
+        ArrayOperations arrayOps = new ArrayOperations(100);             // Member 1
+        SearchingOperations searchOps = new SearchingOperations();       // Member 1
+        StackOperations stackOps = new StackOperations(100);             // Member 2
+        QueueOperations queueOps = new QueueOperations(100);             // Member 2
+        LinkedListGraphOperations member3Ops = new LinkedListGraphOperations(); // Member 3
+        PerformanceAnalyzer member4Ops = new PerformanceAnalyzer();      // Member 4
 
         int choice;
 
@@ -46,10 +49,10 @@ public class Main {
                     member3Ops.showGraphMenu(scanner);
                     break;
                 case 7:
-                    System.out.println("-> Performance Comparison Selected (Member 4 implementation)");
+                    member4Ops.comparePerformance();
                     break;
                 case 8:
-                    System.out.println("-> Display All Results Selected (Member 4 implementation)");
+                    member4Ops.displayAllResults();
                     break;
                 case 9:
                     System.out.println("Exiting program. Thank you!");
