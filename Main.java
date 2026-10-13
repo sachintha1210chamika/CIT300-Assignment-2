@@ -7,6 +7,7 @@ public class Main {
         SearchingOperations searchOps = new SearchingOperations(); 
         StackOperations stackOps = new StackOperations(100);
         QueueOperations queueOps = new QueueOperations(100);
+        LinkedListGraphOperations member3Ops = new LinkedListGraphOperations();
 
         int choice;
 
@@ -36,19 +37,19 @@ public class Main {
                     queueOps.showMenu(scanner);
                     break;
                 case 4:
-                    System.out.println("-> Linked List Operations Selected (Pending implementation)");
+                    member3Ops.showLinkedListMenu(scanner);
                     break;
                 case 5:
                     searchOps.showMenu(scanner);
                     break;
                 case 6:
-                    System.out.println("-> Graph Operations Selected (Pending implementation)");
+                    member3Ops.showGraphMenu(scanner);
                     break;
                 case 7:
-                    System.out.println("-> Performance Comparison Selected (Pending implementation)");
+                    System.out.println("-> Performance Comparison Selected (Member 4 implementation)");
                     break;
                 case 8:
-                    System.out.println("-> Display All Results Selected");
+                    System.out.println("-> Display All Results Selected (Member 4 implementation)");
                     break;
                 case 9:
                     System.out.println("Exiting program. Thank you!");
