@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         ArrayOperations arrayOps = new ArrayOperations(100); // Array capacity set to 100
+        SearchingOperations searchOps = new SearchingOperations(); // Searching operations object
         int choice;
 
         do {
@@ -35,7 +36,7 @@ public class Main {
                     System.out.println("-> Linked List Operations Selected (Pending implementation)");
                     break;
                 case 5:
-                    System.out.println("-> Searching Operations Selected (Pending implementation)");
+                    searchOps.showMenu(scanner);
                     break;
                 case 6:
                     System.out.println("-> Graph Operations Selected (Pending implementation)");
